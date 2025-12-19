@@ -1,0 +1,26 @@
+---
+layout: project
+title: Thermodynamics Portfolio Cycle Analysis
+description: Heat Exchanger and 2 Pumps Cycle Analysis
+technologies: [Thermodynamics, 4-pipe Heat Exchanger, 2 Vivosun Aquapumps, Immersion Heater, Thermometer]
+image: 
+---
+
+## Introduction
+Heat Exchangers are devices designed to transfer thermal energy between two ore more fluids at differnt tempratures without intermixing. These devices are widley used in engineering applications such as power plants, HVAC systems, refridgeration cycles, automotive radiators and chenical processing plants. 
+
+In this project, a group of 4 students investigated a liquid–liquid heat exchanger using water as both the hot and cold working fluids. One of the water buckets had an immersion heater placed in it to warm up the water. Two pumps circulated water from hot and cold reservoirs through a heat exchanger configured initially in parallel. This system allowed changes to operating conditions such as flow arrangement and rate to observe how performance is affected.
+
+## Device Description and Setup
+The system consisted of a heat exchanger with 4 tubes connected to 4 ports, with each tube going into a seperate bucket. Two buckets, the hot and cold reservoirs, were placed next to eachother. The hot resivour had an immersion heater and was the cold was filled with ice. The remaining two buckets, placed across from the hot and cold resivors, were the resivoirs of what they were receiving. The heat exchanger consisted of two seperate internal flow passages which allowed the hot and cold water to flow adjacent to eachother while remaining physically seperated by a solid wall. The pumps were used to circulate the fluids, and the flow arrangement was changed between parallel flow and counterflow by physically changing the placement of the tubes in the empty buckets. Temperature measurements at the reservoirs allowed for evaluation of preformance of the heat transfer.
+
+Heat was transfered from the hot fluid to the cold fluid in one of three ways: Convention from the hot water to the heat exchanger wall, Convection through the wall, and from the wall to the cold water. 
+
+
+Pumps are used to circulate the fluids, and the flow arrangement can be changed between parallel flow and counterflow. Temperature measurements at the reservoirs allow evaluation of heat transfer performance.
+
+## System Diagram (Control Volume)
+
+
+
+## Equations
