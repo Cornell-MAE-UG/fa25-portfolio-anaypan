@@ -26,41 +26,26 @@ Heat was transferred from the hot fluid to the cold fluid in one of three ways: 
 /assets/images/heat_exchanger_system_2.HEIC
 
 **Schematic 1 - Parallel Flow (Max Flow Rate)**
-
-
-                      Q_dot_loss
-                          ^
-        +---------------------------------+
-        |        Heat Exchanger           |
-        |        (Control Volume)         |
-        |                                 |
-Hot In  |  m_dot_h , T_h,in  ----->       |  ----->  m_dot_h , T_h,out  Hot Out
-        |                                 |
-Cold In |  m_dot_c , T_c,in  ----->       |  ----->  m_dot_c , T_c,out  Cold Out
-        |                                 |
-        +---------------------------------+
-
+Hot In  (T_h,in , m_dot_h = max)  --->  [ HEAT EXCHANGER (CV) ]  --->  Hot Out  (T_h,out)
+                                      Q_dot_h+c (internal)
+Cold Out (T_c,out)  <---  [ HEAT EXCHANGER (CV) ]  <---  Cold In (T_c,in , m_dot_c = max)
+                                      |
+                                      v
+                                   Q_dot_loss
 
 
                   
 **Schematic 2 - Hot Counterflow (Max Flow Rate)**
-                     
-                      
-                      Q_dot_loss
-                          ^
-        +---------------------------------+
-        |        Heat Exchanger           |
-        |        (Control Volume)         |
-        |                                 |
-Hot In  |  m_dot_h , T_h,in  ----->       |  ----->  m_dot_h , T_h,out  Hot Out
-        |                                 |
-Cold In |  m_dot_c , T_c,in  <-----       |  <-----  m_dot_c , T_c,out  Cold Out
-        |                                 |
-        +---------------------------------+
+Hot In  (T_h,in , m_dot_h = max)  --->  [ HEAT EXCHANGER (CV) ]  --->  Hot Out  (T_h,out)
+Cold In (T_c,in , m_dot_c = max)  --->  [ HEAT EXCHANGER (CV) ]  --->  Cold Out (T_c,out)
+                                      |
+                                      v
+                                   Q_dot_loss
+
 
 
 ## Equations
-- Assumptions: Neglecting kinetic and potential energy changes, No shaft work(Q=0), System at Steady State, Heat transfer Occurs only Between Streams
+***Assumptions:*** *Neglecting kinetic and potential energy changes, No shaft work(Q=0), System at Steady State, Heat transfer Occurs only Between Streams*
 **Mass Balance**
 Overall Steady State Balance:
 Σm<sub>in</sub> = Σm<sub>out</sub>
