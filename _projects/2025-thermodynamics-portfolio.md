@@ -26,25 +26,32 @@ Heat was transferred from the hot fluid to the cold fluid in one of three ways: 
 /assets/images/heat_exchanger_system_2.HEIC
 
 **Schematic 1 - Parallel Flow (Max Flow Rate)**
-
-
-$Hot In  (T_h,in , m_dot_h = max)  --->  [ HEAT EXCHANGER (CV) ]  --->  Hot Out  (T_h,out)
-                                      Q_dot_h+c (internal)
-Cold Out (T_c,out)  <---  [ HEAT EXCHANGER (CV) ]  <---  Cold In (T_c,in , m_dot_c = max)
-                                      |
-                                      v
-                                   Q_dot_loss$
-
-
-
-                  
+                   
+                    Q̇_loss
+                      ↑
+        ┌─────────────────────────┐
+        │        Heat Exchanger    │
+        │        (Control Volume)  │
+        │                          │
+    Hot In| T_h, in, m__h -->     | --> ṁ_h , T_h,out  Hot Out 
+        |                          |
+    Cold In| T_c, in, m_c -->     |--> ṁ_c , T_c,out  Cold Out
+        |                          |
+        └─────────────────────────┘
+     
 **Schematic 2 - Hot Counterflow (Max Flow Rate)**
 
-Hot In  (T_h,in , m_dot_h = max)  --->  [ HEAT EXCHANGER (CV) ]  --->  Hot Out  (T_h,out)
-Cold In (T_c,in , m_dot_c = max)  --->  [ HEAT EXCHANGER (CV) ]  --->  Cold Out (T_c,out)
-                                      |
-                                      v
-                                   Q_dot_loss
+                    Q̇_loss
+                      ↑
+        ┌─────────────────────────┐
+        │        Heat Exchanger    │
+        │        (Control Volume)  │
+        │                          │
+    Hot In| T_h, in, m__h -->     | --> ṁ_h , T_h,out  Hot Out 
+        |                          |
+    Cold Out| T_c, in, m_c <--     |<-- ṁ_c , T_c,out  Cold In
+        |                          |
+        └─────────────────────────┘
 
 
 
