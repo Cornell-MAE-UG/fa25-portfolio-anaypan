@@ -28,32 +28,35 @@ Heat was transferred from the hot fluid to the cold fluid in one of three ways: 
 **Schematic 1 - Parallel Flow (Max Flow Rate)**
 
 
-                    Q̇_loss
-                      ↑
-        ┌─────────────────────────┐
-        │        Heat Exchanger    │
-        │        (Control Volume)  │
-        │                           │
-Hot In  │  ṁ_h , T_h,in  ─────►    │  ─────►  ṁ_h , T_h,out  Hot Out
-        │                           │
-Cold In │  ṁ_c , T_c,in   ─────►   │  ─────►  ṁ_c , T_c,out  Cold Out
-        │                           │
-        └─────────────────────────┘
+                      Q_dot_loss
+                          ^
+        +---------------------------------+
+        |        Heat Exchanger           |
+        |        (Control Volume)         |
+        |                                 |
+Hot In  |  m_dot_h , T_h,in  ----->       |  ----->  m_dot_h , T_h,out  Hot Out
+        |                                 |
+Cold In |  m_dot_c , T_c,in  ----->       |  ----->  m_dot_c , T_c,out  Cold Out
+        |                                 |
+        +---------------------------------+
 
+
+
+                  
 **Schematic 2 - Hot Counterflow (Max Flow Rate)**
-
-
-                    Q̇_loss
-                      ↑
-        ┌─────────────────────────┐
-        │        Heat Exchanger    │
-        │        (Control Volume)  │
-        │                           │
-Hot In  │  ṁ_h , T_h,in  ─────►    │   ─────►  ṁ_h , T_h,out Hot Out
-        │                           │
-Cold In │  ṁ_c , T_c,in  ◄─────    │   ◄─────  ṁ_c , T_c,out Cold Out
-        │                           │
-        └─────────────────────────┘
+                     
+                      
+                      Q_dot_loss
+                          ^
+        +---------------------------------+
+        |        Heat Exchanger           |
+        |        (Control Volume)         |
+        |                                 |
+Hot In  |  m_dot_h , T_h,in  ----->       |  ----->  m_dot_h , T_h,out  Hot Out
+        |                                 |
+Cold In |  m_dot_c , T_c,in  <-----       |  <-----  m_dot_c , T_c,out  Cold Out
+        |                                 |
+        +---------------------------------+
 
 
 ## Equations
