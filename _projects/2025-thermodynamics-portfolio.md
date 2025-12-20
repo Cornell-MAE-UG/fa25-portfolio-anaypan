@@ -17,11 +17,41 @@ The system consisted of a heat exchanger with 4 tubes connected to 4 ports, with
 Heat was transferred from the hot fluid to the cold fluid in one of three ways: Convention from the hot water to the heat exchanger wall, Convection through the wall, and from the wall to the cold water. 
 
 ## System Diagram (Control Volume)
+**Image 1**
 /assets/images/Heat Exchanger System.jpg
 
+**Image 2**
 /assets/images/heat_exchanger_system_2.HEIC
 
+**Schematic 1 - Parallel Flow (Max Flow Rate)**
+                    Q̇_loss
+                      ↑
+        ┌─────────────────────────┐
+        │        Heat Exchanger    │
+        │        (Control Volume)  │
+        │                           │
+Hot In  │  ṁ_h , T_h,in  ─────►    │  ─────►  ṁ_h , T_h,out  Hot Out
+        │                           │
+Cold In │  ṁ_c , T_c,in   ─────►   │  ─────►  ṁ_c , T_c,out  Cold Out
+        │                           │
+        └─────────────────────────┘
+
+**Schematic 2 - Hot Counterflow (Max Flow Rate)**
+                    Q̇_loss
+                      ↑
+        ┌─────────────────────────┐
+        │        Heat Exchanger    │
+        │        (Control Volume)  │
+        │                           │
+Hot In  │  ṁ_h , T_h,in  ─────►    │   ─────►  ṁ_h , T_h,out Hot Out
+        │                           │
+Cold In │  ṁ_c , T_c,in  ◄─────    │   ◄─────  ṁ_c , T_c,out Cold Out
+        │                           │
+        └─────────────────────────┘
+
+
 ## Equations
+- Assumptions: Neglecting kinetic and potential energy changes, No shaft work(Q=0), System at Steady State, Heat transfer Occurs only Between Streams
 **Mass Balance**
 Overall Steady State Balance:
 Σm<sub>in</sub> = Σm<sub>out</sub>
@@ -32,7 +62,6 @@ m<sub>cold,in</sub> = m<sub>cold,out</sub>
 
 **Energy Balance**
 Overall Steady State Balance: 
-- Assumptions: Neglecting kinetic and potential energy changes, No shaft work, System at Steady State
 Q + Σm<sub>in</sub>(h<sub>in</sub>) = Σm<sub>out</sub>(h<sub>out</sub>)
 
 Energy Balance of Hot Process:
@@ -99,7 +128,7 @@ T<sub>cold</sub>: 293.5K
 T<sub>hot</sub>: 290.5K
 
 **Conclusions**
-In parallel flow, the hot stream cooled by 20.2K, in counterflow the hot streanmcooled by 14.6K. When the cold stream rate was increased to the highest state (while hot remained constant at a medium) in parallel flow the hot stream cooled by 10.9K and in counterflow it cooled by 5.7K. This shows that there is a higher heat-transfer effectiveness in counterflow. The reasoning behind the counterflow having a higher heat-effectiveness could be due to the configuration where both reservoirs flow at their largest temperature differences (in parallel) approaching each other causing the temperature difference to be lower limiting the heat transfer. In contrast the counterflow model allows a larger temperature difference in the device increasing the heat transfer rate and overall thermal effectiveness. When the rate of the cold flow increased, this reduced the duration of heat transfer between the hot and cold streams as the cold flow was traveling faster, in counterflow this process contributed the most. 
+In parallel flow, the hot stream cooled by 20.2K, in counterflow the hot streanmcooled by 14.6K. When the cold stream rate was increased to the lowest state (while hot remained constant at high) in parallel flow the hot stream cooled by 10.9K and in counterflow it cooled by 5.7K. This shows that there is a higher heat-transfer effectiveness in counterflow. The reasoning behind the counterflow having a higher heat-effectiveness could be due to the configuration where both reservoirs flow at their largest temperature differences (in parallel) approaching each other causing the temperature difference to be lower limiting the heat transfer. In contrast the counterflow model allows a larger temperature difference in the device increasing the heat transfer rate and overall thermal effectiveness. When the rate of the cold flow decreased, this reduced the duration of heat transfer between the hot and cold streams as the hot flow was traveling faster, so the fluids were in shorter contact with eachother reducing the transfer of heat/heat transfer. In counterflow this process contributed the most. 
 
 ## Reflections
 The heat exchanger did not operate in a perfectly adiabatic manner. Though the dominant heat transfer occurs between the hot and cold water streams, heat was also exchanged with the surrounding environment as well as by direct contact from our fingers when adjusting the heat exchanger. Additionally true steady state conditions were not met and were difficult to achieve due to the small size of the hot and cold reservoirs. As the system operated, the reservoirs temperatures continuously changed due to the same quantities of water being reused across each trial. However quasi-steady-state conditions were maintained when temperature readings changed slowly over time and remained constant during the measurement periods. Adjustments could be made to improve the steady state behavior by increasing the volume of the reservoirs or continuously supplying fresh hot and cold water at fixed temperatures. This will reduce heat loss, and will allow the heat exchanger to operate closer to true steady state. The kinetic energy changes between the inlet and outlet of each flow stream are negligible for this experiment. Although the pumps were used to drive the flow of the inlets and outlets, the areas of the tubing and heat exchanger remained approximately the same resulting in similar flow velocities. So changes in kinetic energy was small compared to thermal energy changes and were neglected in the energy balance. 
