@@ -57,83 +57,126 @@ Heat was transferred from the hot fluid to the cold fluid in one of three ways: 
 
 ## Equations
 ***Assumptions:*** *Neglecting kinetic and potential energy changes, No shaft work(Q=0), System at Steady State, Heat transfer Occurs only Between Streams*
-**Mass Balance**
-Overall Steady State Balance:
+
+### Mass Balance**
+
+**Overall Steady State Balance:**
+
 Σm<sub>in</sub> = Σm<sub>out</sub>
 
-Steady State Balance of Each Process:
+**Steady State Balance of Each Process:**
+
 m<sub>hot,in</sub> = m<sub>hot,out</sub>
 m<sub>cold,in</sub> = m<sub>cold,out</sub>
 
-**Energy Balance**
-Overall Steady State Balance: 
+### Energy Balance**
+
+**Overall Steady State Balance:**
+
 Q + Σm<sub>in</sub>(h<sub>in</sub>) = Σm<sub>out</sub>(h<sub>out</sub>)
 
-Energy Balance of Hot Process:
+**Energy Balance of Hot Process:**
+
 Q<sub>hot = m<sub>hot</sub>(cp)(T<sub>hot,in</sub> - T<sub>hot,out</sub>)
 
-Energy Balance of Cold Process:
+**Energy Balance of Cold Process:**
+
 Q<sub>cold = m<sub>hot</sub>(cp)(T<sub>cold,in</sub> - T<sub>cold,out</sub>)
 
-**Entropy Balance**
-Overall Steady State Balance: 
+### Entropy Balance
+
+**Overall Steady State Balance:**
 0=∑m(s<sub>in</sub>)​−∑m(s<sub>out</sub>)​+∑T/Q​​ + S<sub>gen</sub>
 
-With 
-S<sub>gen</sub>
+*With:* 
+S<sub>gen</sub> > 0
 ​
 
 ## Description of Change
 In the experimentation done, the performance of the heat exchanger operating in parallel flow, counter flow and changes in rate were measured while maintaining constant inlet temperatures. The two main operating changes was reversing one look to flow in counterflow by physically reversing one loop so the one of the streams flowed in the opposite direction of other stream, and the rate of the hot stream maximized while the flow of the cold stream was minimized in both parallel and counterflow. 
 
 ## Measured Data
-**Trial 1 - Parallel Flow, Both High Flow Rates**
-Initial:
+### Trial 1 - Parallel Flow, Both High Flow Rates
+
+**Initial:**
+
 T<sub>cold</sub>: 280K
+
 T<sub>hot</sub>: 314.2K
 
-Time: 22.95 sec
 
-After Process:
+*Time: 22.95 sec*
+
+
+**After Process:**
+
 T<sub>hot</sub>: 294.0K
+
 T<sub>cold</sub>: 297.3K
 
-**Trial 2 - Hot Counterflow - Cold Parallel Flow, Both High Flow Rates**
-Initial:
+
+### Trial 2 - Hot Counterflow - Cold Parallel Flow, Both High Flow Rates**
+
+**Initial:**
+
 T<sub>cold</sub>: 283.0K
+
 T<sub>hot</sub>: 307.0K
 
-Time: 22.18 sec
 
-After Process:
+*Time: 22.18 sec*
+
+
+**After Process:**
+
 T<sub>cold</sub>: 295.1K
+
 T<sub>hot</sub>: 292.4K
 
 
-**Trial 3 - Parallel Flow, Cold Lowest Flow Rate - Hot Highest Flow Rate**
-Initial:
+### Trial 3 - Parallel Flow, Cold Lowest Flow Rate - Hot Highest Flow Rate
+
+**Initial:**
+
 T<sub>cold</sub>: 282.6
+
 T<sub>hot</sub>: 307.1K
 
-Time: 22.51 sec
 
-After Process:
+*Time: 22.51 sec*
+
+
+**After Process:**
+
 T<sub>cold</sub>: 292.2K
+
 T<sub>hot</sub>: 296.2K
 
-**Trial 4 - Hot Counterflow - Cold Parallel Flow, Cold Lowest Flow Rate - Hot Highest Flow Rate**
-Initial:
+
+### Trial 4 - Hot Counterflow - Cold Parallel Flow, Cold Lowest Flow Rate - Hot Highest Flow Rate
+
+**Initial:**
+
 T<sub> cold</sub>: 282.5K
+
 T<sub>hot</sub>: 311K
 
-Time: 22.95 sec
 
-After Process:
+*Time: 22.95 sec*
+
+
+**After Process:**
+
 T<sub>cold</sub>: 293.5K
+
 T<sub>hot</sub>: 290.5K
 
-**Conclusions**
+
+
+### Conclusions
+
 In parallel flow, the hot stream cooled by 20.2K, in counterflow the hot streanmcooled by 14.6K. When the cold stream rate was increased to the lowest state (while hot remained constant at high) in parallel flow the hot stream cooled by 10.9K and in counterflow it cooled by 5.7K. This shows that there is a higher heat-transfer effectiveness in counterflow. The reasoning behind the counterflow having a higher heat-effectiveness could be due to the configuration where both reservoirs flow at their largest temperature differences (in parallel) approaching each other causing the temperature difference to be lower limiting the heat transfer. In contrast the counterflow model allows a larger temperature difference in the device increasing the heat transfer rate and overall thermal effectiveness. When the rate of the cold flow decreased, this reduced the duration of heat transfer between the hot and cold streams as the hot flow was traveling faster, so the fluids were in shorter contact with eachother reducing the transfer of heat/heat transfer. In counterflow this process contributed the most. 
 
 ## Reflections
+
 The heat exchanger did not operate in a perfectly adiabatic manner. Though the dominant heat transfer occurs between the hot and cold water streams, heat was also exchanged with the surrounding environment as well as by direct contact from our fingers when adjusting the heat exchanger. Additionally true steady state conditions were not met and were difficult to achieve due to the small size of the hot and cold reservoirs. As the system operated, the reservoirs temperatures continuously changed due to the same quantities of water being reused across each trial. However quasi-steady-state conditions were maintained when temperature readings changed slowly over time and remained constant during the measurement periods. Adjustments could be made to improve the steady state behavior by increasing the volume of the reservoirs or continuously supplying fresh hot and cold water at fixed temperatures. This will reduce heat loss, and will allow the heat exchanger to operate closer to true steady state. The kinetic energy changes between the inlet and outlet of each flow stream are negligible for this experiment. Although the pumps were used to drive the flow of the inlets and outlets, the areas of the tubing and heat exchanger remained approximately the same resulting in similar flow velocities. So changes in kinetic energy was small compared to thermal energy changes and were neglected in the energy balance. 
