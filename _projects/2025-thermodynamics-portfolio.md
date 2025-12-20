@@ -18,12 +18,16 @@ Heat was transferred from the hot fluid to the cold fluid in one of three ways: 
 
 ## System Diagram (Control Volume)
 **Image 1**
+
 /assets/images/Heat Exchanger System.jpg
 
 **Image 2**
+
 /assets/images/heat_exchanger_system_2.HEIC
 
 **Schematic 1 - Parallel Flow (Max Flow Rate)**
+
+
                     Q̇_loss
                       ↑
         ┌─────────────────────────┐
@@ -37,6 +41,8 @@ Cold In │  ṁ_c , T_c,in   ─────►   │  ─────►  ṁ_
         └─────────────────────────┘
 
 **Schematic 2 - Hot Counterflow (Max Flow Rate)**
+
+
                     Q̇_loss
                       ↑
         ┌─────────────────────────┐
