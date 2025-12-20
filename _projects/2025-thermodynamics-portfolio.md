@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Thermodynamics Portfolio Cycle Analysis
-description: Heat Exchanger and 2 Pumps Cycle Analysis
+description: Heat Exchanger and Pumps Cycle Analysis
 technologies: [Thermodynamics, 4-pipe Heat Exchanger, Thermocouple, Vivosun Aquapumps, Immersion Heater, Thermometer]
 image: /assets/images/Heat Exchanger System.jpg
 ---
